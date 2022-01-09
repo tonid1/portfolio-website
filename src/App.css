@@ -1,0 +1,240 @@
+body{
+  font-family: 'Mukta', sans-serif;
+}
+
+a:-webkit-any-link{
+  color: inherit;
+  text-decoration: none;
+  height: 20px;
+}
+
+::-webkit-scrollbar{
+  width: 7px;
+  background-color: #f1f1f1;
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb{
+  background-color: #000000;
+}
+
+.main-section{
+  background: linear-gradient(90deg, rgba(0,35,54,1) 0%, rgba(2,37,56,1) 100%);;
+  width: 100vw;
+  height: 100vh;
+}
+
+.home-page, .aboutme-page, .portfolio-page{
+  transition: 0.3s ease;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+}
+
+.home-page{
+  opacity: 1;
+  pointer-events: all;
+}
+
+.aboutme-page, .portfolio-page{
+  opacity: 0;
+  pointer-events: none;
+}
+
+
+/* HEADER */
+
+.top-bar{
+  position: fixed;
+  top: 0;
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  padding: 0 15%;
+  align-items: center;
+  width: 70vw;
+}
+
+.top-bar h4{
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s ease;
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.top-bar h4:hover{
+  background: #004c75fa;
+}
+
+.icon{
+  width: 20px;
+  height: 20px;
+  padding: 10px;
+  border-radius: 5px;
+  transition: 0.2s ease;
+}
+
+.icon:hover{
+  background: #004c75fa;
+}
+
+
+
+/* POCETNA */
+
+.main-page{
+  width: 100%;
+  height: 100vh;
+  background: #002336FA;
+  backdrop-filter: blur(2px);
+  display: flex;
+  flex-direction: row;
+}
+
+.main-page > div{
+  width: 50%;
+  overflow: hidden;
+}
+
+.title-front{
+  padding-top: 15%;
+  padding-left: 10%;
+  color: #fff;
+}
+
+.heading-front{
+  font-size: 3vw;
+  font-weight: 500;
+}
+
+.heading-name{
+  font-size: 7vw;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-top: -40px;
+}
+
+.title-image-div{
+  margin-top: 15%;
+  margin-left: 5%;
+}
+
+.title-image{
+  height: 40vh;
+  width: auto;
+  object-fit: contain;
+}
+
+.title-image-inner{
+  position: relative;
+  z-index: 1;
+}
+
+.title-image-inner:before{
+  content: "";
+  position: absolute;
+  bottom: -50px;
+  left: 40%;
+  background-color: #000000;
+  height: 30vh;
+  width: 30vh;
+  border-radius: 50%;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+
+
+/* ZIVOTOPIS */
+
+.about-image{
+  padding-top: 15%;
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.photo{
+  height: 55vh;
+  width: auto;
+  margin-right: 10%;
+}
+
+.about-image:before{
+  content: "";
+  position: absolute;
+  bottom: 5%;
+  left: 20%;
+  background-color: #000000;
+  height: 50vh;
+  width: 50vh;
+  border-radius: 50%;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.cv{
+  padding-left: 5%;
+  padding-top: 15%;
+  color: #fff;
+}
+
+.cv p{
+  font-size: 1.3vw;
+  line-height: 30px;
+  padding-right: 30%;
+}
+
+
+
+/* PORTFOLIO */
+
+.portfolio-front{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  margin-left: 10%;
+  position: relative;
+}
+
+.main-page .portfolio-front{
+  overflow: visible;
+}
+
+.portfolio-front:before{
+  content: "";
+  position: absolute;
+  bottom: 20%;
+  right: -25%;
+  background-color: #000000;
+  height: 35vh;
+  width: 35vh;
+  border-radius: 50%;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.portfolio-inner{
+  display: flex;
+  flex-direction: column;
+  margin: 0 20px;
+}
+
+.portfolio-heading{
+  font-size: 3vw;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #fff;
+  padding: 10px 20px;
+  transition: 0.2s ease;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.portfolio-heading:hover{
+  background: #004c75fa;
+}
