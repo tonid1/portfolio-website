@@ -1,6 +1,7 @@
 {
   "name": "zivotopis",
   "version": "0.1.0",
+  "homepage": "http://tonidedic.com.hr/",
   "private": true,
   "dependencies": {
     "@oberon-amsterdam/horizontal": "^1.0.5",
