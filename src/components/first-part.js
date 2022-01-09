@@ -7,7 +7,7 @@ function First(){
         <div className='home-page'>
             <div className='main-page'>
                 <div className="title-front">
-                    <p className="heading-front">Junior web developer test</p>
+                    <p className="heading-front">Junior web developer test2</p>
                     <p className="heading-name">Toni Dedić</p>
                 </div>
                 <div className='title-image-div'>
