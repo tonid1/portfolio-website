@@ -197,7 +197,7 @@ a:-webkit-any-link{
   flex-direction: column;
   justify-content: center;
   align-items: flex-end;
-  margin-left: 10%;
+  margin-left: 5%;
   position: relative;
 }
 
@@ -228,13 +228,43 @@ a:-webkit-any-link{
   font-size: 3vw;
   text-transform: uppercase;
   font-weight: 700;
-  color: #fff;
+  color: #fff !important;
   padding: 10px 20px;
   transition: 0.2s ease;
   border-radius: 5px;
   margin: 10px 0;
 }
 
-.portfolio-heading:hover{
+.portfolio-inner:not(:nth-child(4)) .portfolio-heading:hover{
   background: #004c75fa;
+  cursor: pointer;
+}
+
+.portfolio-description{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-right: 5%;
+  position: relative;
+}
+
+.portfolio-description-inner{
+  position: absolute;
+  pointer-events: none;
+  opacity: 0;
+  transition: 0.2s ease;
+}
+
+.portfolio-description-content{
+  font-size: 2vw;
+  font-weight: 500;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+a:-webkit-any-link{
+  height: initial;
 }
